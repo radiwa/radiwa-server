@@ -6,6 +6,17 @@ gem 'sinatra'
 gem 'sequel'
 gem 'oj'
 
+gem 'sqlite3'
+
+gem 'rack'
+gem 'rake'
+
+gem 'dry-inflector'
+
+gem 'require_all'
+
+gem 'bcrypt'
+
 # gem 'nats-pure'
 
 gem 'jsonapi-parser'
@@ -13,8 +24,10 @@ gem 'jsonapi-renderer'
 gem 'jsonapi-serializable'
 gem 'jsonapi-deserializable'
 
-group :production, :staging do
-  gem 'puma'
+gem 'puma'
+
+group :staging, :production do
+  gem 'rollbar'
 end
 
 group :development, :test do

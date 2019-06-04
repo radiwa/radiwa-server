@@ -1,0 +1,3 @@
+# for now, file doesn't needed
+development:
+  adapter: sqlite
